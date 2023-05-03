@@ -72,10 +72,8 @@ try {
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL, Publisher VARCHAR(50),
     User_Email VARCHAR(50) NOT NULL,
-    Notes VARCHAR(2000));
+    Notes VARCHAR(2000)");
     $stmt6->execute();
-    $stmt6->closeCursor();
-
-    
+    $stmt6->closeCursor();    
 }
 ?>
