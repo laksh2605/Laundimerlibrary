@@ -67,13 +67,27 @@ try {
     $stmt5->closeCursor();
 
     $stmt6 = $conn->prepare("DROP TABLE IF EXISTS TblRequests;
-    CREATE TABLE TblRequests(
-    ISBN BIGINT(13) PRIMARY KEY,
+    CREATE TABLE TblRequests(ISBN BIGINT(13) PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL, Publisher VARCHAR(50),
     User_Email VARCHAR(50) NOT NULL,
     Notes VARCHAR(2000)");
     $stmt6->execute();
-    $stmt6->closeCursor();    
+    $stmt6->closeCursor();  
+    
+    $stmt7 = $conn->prepare("DROP TABLE IF EXISTS TblOrders;
+    CREATE TABLE TblOrders(UserID INT(6),
+    ISBN INT(6) UNSIGNED,
+    Title VARCHAR(50) NOT NULL, Date_Ordered DATE,
+    PRIMARY KEY(ISBN,UserID)");
+    $stmt7->execute();
+    $stmt7->closeCursor();  
+
+    $stmt8 = $conn->prepare("DROP TABLE IF EXISTS TblSearch;
+    CREATE TABLE TblSearch(ISBN BIGINT(13) UNSIGNED PRIMARY KEY, Title VARCHAR(50) NOT NULL,
+    Author VARCHAR(50) NOT NULL,
+    Genre VARCHAR(50) NOT NULL");
+    $stmt8->execute();
+    $stmt8->closeCursor(); 
 }
 ?>
