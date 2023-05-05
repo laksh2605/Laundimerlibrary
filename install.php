@@ -1,10 +1,11 @@
 <?php
+echo "1";
 //create DB here..
    $servername = 'localhost';
    $username = 'root';
    $password= '';
 //note no Database mentioned here!!
-try {
+
     $conn = new PDO("mysql:host=$servername", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "CREATE DATABASE IF NOT EXISTS Laundimerlibrary";
@@ -13,7 +14,9 @@ try {
     $sql = "USE Laundimerlibrary";
     $conn->exec($sql);
     echo "DB created successfully";
-    include_once("connection.php");
+    //include_once("connection.php");
+
+
     $stmt1 = $conn->prepare("DROP TABLE IF EXISTS TblUsers;
     CREATE TABLE TblUsers 
     (UserID INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -26,9 +29,11 @@ try {
     $stmt1->execute();
     $stmt1->closeCursor();
 
-    $stmt2 = $conn->prepare("DROP TABLE IF EXISTS TblItems;
-    CREATE TABLE TblTuck
-    ISBN BIGINT(13) UNSIGNED PRIMARY KEY,
+
+    
+    $stmt2 = $conn->prepare("DROP TABLE IF EXISTS TblBooks;
+    CREATE TABLE TblBooks
+    ISBN INT(13) UNSIGNED PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL,
     Genre VARCHAR(50) NOT NULL,
@@ -36,7 +41,7 @@ try {
     Length INT(5) NOT NULL,
     Publisher VARCHAR(50) NOT NULL, Date_Published DATE NOT NULL,
     Rating FLOAT(3) NOT NULL DEFAULT 0, 
-    In_Library VARCHAR(1) NOT NULL DEFAULT 'Y'");    
+    In_Library VARCHAR(1) NOT NULL DEFAULT 'Y')");    
     $stmt2->execute();
     $stmt2->closeCursor();
 
@@ -89,5 +94,5 @@ try {
     Genre VARCHAR(50) NOT NULL");
     $stmt8->execute();
     $stmt8->closeCursor(); 
-}
+
 ?>
