@@ -28,26 +28,25 @@ echo "1";
     UserRole TINYINT(1))");
     $stmt1->execute();
     $stmt1->closeCursor();
-
-
     
     $stmt2 = $conn->prepare("DROP TABLE IF EXISTS TblBooks;
     CREATE TABLE TblBooks
-    ISBN INT(13) UNSIGNED PRIMARY KEY,
+    (ISBN INT(13) UNSIGNED PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL,
     Genre VARCHAR(50) NOT NULL,
     Description VARCHAR(2000) NOT NULL,
     Length INT(5) NOT NULL,
-    Publisher VARCHAR(50) NOT NULL, Date_Published DATE NOT NULL,
+    Publisher VARCHAR(50) NOT NULL, 
+    Date_Published DATE NOT NULL,
     Rating FLOAT(3) NOT NULL DEFAULT 0, 
     In_Library VARCHAR(1) NOT NULL DEFAULT 'Y')");    
     $stmt2->execute();
     $stmt2->closeCursor();
 
     $stmt3 = $conn->prepare("DROP TABLE IF EXISTS TblImages;
-    CREATE TABLE TblImages(
-    ISBN BIGINT(13) UNSIGNED PRIMARY KEY, 
+    CREATE TABLE TblImages
+    (ISBN BIGINT(13) UNSIGNED PRIMARY KEY, 
     Image LONGBLOB(4294967295)");
     $stmt3->execute();
     $stmt3->closeCursor();
