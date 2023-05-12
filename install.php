@@ -64,11 +64,12 @@ echo "1";
     $stmt5->closeCursor();
 
     $stmt6 = $conn->prepare("DROP TABLE IF EXISTS TblRequests;
-    CREATE TABLE TblRequests(ISBN BIGINT(13) PRIMARY KEY,
+    CREATE TABLE TblRequests
+    (ISBN VARCHAR(13) PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
-    Author VARCHAR(50) NOT NULL, Publisher VARCHAR(50),
+    Author VARCHAR(50) NOT NULL, 
     User_Email VARCHAR(50) NOT NULL,
-    Notes VARCHAR(2000)");
+    Notes VARCHAR(2000))");
     $stmt6->execute();
     $stmt6->closeCursor();  
     
