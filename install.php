@@ -31,40 +31,33 @@ echo "1";
     
     $stmt2 = $conn->prepare("DROP TABLE IF EXISTS TblBooks;
     CREATE TABLE TblBooks
-    (ISBN INT(13) UNSIGNED PRIMARY KEY,
+    (ISBN VARCHAR(13) PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL,
     Genre VARCHAR(50) NOT NULL,
     Description VARCHAR(2000) NOT NULL,
-    Length INT(5) NOT NULL,
-    Publisher VARCHAR(50) NOT NULL, 
-    Date_Published DATE NOT NULL,
+    Length INT(5) NOT NULL, 
+    Image VARCHAR (150),
     Rating FLOAT(3) NOT NULL DEFAULT 0, 
     In_Library VARCHAR(1) NOT NULL DEFAULT 'Y')");    
     $stmt2->execute();
     $stmt2->closeCursor();
 
-    $stmt3 = $conn->prepare("DROP TABLE IF EXISTS TblImages;
-    CREATE TABLE TblImages
-    (ISBN BIGINT(13) UNSIGNED PRIMARY KEY, 
-    Image LONGBLOB(4294967295)");
-    $stmt3->execute();
-    $stmt3->closeCursor();
-
     $stmt4 = $conn->prepare("DROP TABLE IF EXISTS TblLoans;
-    CREATE TABLE TblLoans(UserID INT(6),
-    ISBN BIGINT(13),
+    CREATE TABLE TblLoans
+    (UserID INT(6),
+    ISBN VARCHAR(13),
     Date_Borrowed DATE, 
     Date_Returned DATE,
     Review VARCHAR(2000) NOT NULL, 
-    Rating FLOAT(3) NOT NULL, 
-    Late_Fines FLOAT(4) NOT NULL, 
-    PRIMARY KEY(ISBN,UserID)");
+    Rating INT(3) NOT NULL, 
+    PRIMARY KEY(ISBN,UserID))");
     $stmt4->execute();
     $stmt4->closeCursor();
 
     $stmt5 = $conn->prepare("DROP TABLE IF EXISTS TblReviews;
-    ISBN BIGINT(13),
+    CREATE TABLE TblReviews
+    (ISBN VARCHAR(13),
     UserID INT(6),
     Reviews VARCHAR(2000) NOT NULL)");
     $stmt5->execute();
