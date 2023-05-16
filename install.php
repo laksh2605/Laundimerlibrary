@@ -49,8 +49,6 @@ echo "1";
     ISBN VARCHAR(13),
     Date_Borrowed DATE, 
     Date_Returned DATE,
-    Review VARCHAR(2000) NOT NULL, 
-    Rating INT(3) NOT NULL, 
     PRIMARY KEY(ISBN,UserID))");
     $stmt4->execute();
     $stmt4->closeCursor();
@@ -59,6 +57,7 @@ echo "1";
     CREATE TABLE TblReviews
     (ISBN VARCHAR(13),
     UserID INT(6),
+    Rating INT(3) NOT NULL, 
     Reviews VARCHAR(2000) NOT NULL)");
     $stmt5->execute();
     $stmt5->closeCursor();
@@ -74,17 +73,21 @@ echo "1";
     $stmt6->closeCursor();  
     
     $stmt7 = $conn->prepare("DROP TABLE IF EXISTS TblOrders;
-    CREATE TABLE TblOrders(UserID INT(6),
+    CREATE TABLE TblOrders
+    (UserID INT(6),
     ISBN INT(6) UNSIGNED,
-    Title VARCHAR(50) NOT NULL, Date_Ordered DATE,
-    PRIMARY KEY(ISBN,UserID)");
+    Title VARCHAR(50) NOT NULL, 
+    Date_Ordered DATE,
+    PRIMARY KEY(ISBN,UserID))");
     $stmt7->execute();
     $stmt7->closeCursor();  
 
     $stmt8 = $conn->prepare("DROP TABLE IF EXISTS TblSearch;
-    CREATE TABLE TblSearch(ISBN BIGINT(13) UNSIGNED PRIMARY KEY, Title VARCHAR(50) NOT NULL,
+    CREATE TABLE TblSearch
+    (ISBN BIGINT(13) UNSIGNED PRIMARY KEY, 
+    Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL,
-    Genre VARCHAR(50) NOT NULL");
+    Genre VARCHAR(50) NOT NULL)");
     $stmt8->execute();
     $stmt8->closeCursor(); 
 
