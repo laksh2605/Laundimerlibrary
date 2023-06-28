@@ -4,7 +4,7 @@ try{
 	include_once('connection.php');
 	array_map("htmlspecialchars", $_POST);
 
-	
+    
 	$stmt = $conn->prepare("INSERT INTO TblBooks 
     (ISBN,Title,Author,Genre,Description,Length,Image,Rating,In_Library)VALUES 
     (NULL,:title,:author,:genre,:description,;length,:image,:rating,:inlibrary)");
