@@ -16,5 +16,9 @@
     Description: <input type = "text" name = "description"><br>
     <input type= "submit" value = "Add New Book"><br>
 </form>
+<?php
+include_once('connections.php');
+$stmt=$conn->prepare ("SELECT * FROMs TblBooks");
+$stmt->execute();
 </body>
 </html>
