@@ -1,4 +1,5 @@
 <?php
+//this gives all the appropriate information a set variable
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,8 +11,10 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //echo "Connected successfully <br>"; 
     }
+    //again this outputs if the database connection failed and shows why
 catch(PDOException $e)
     {
     echo "Connection failed: " . $e->getMessage()."<br>";
     }
 ?>
+
