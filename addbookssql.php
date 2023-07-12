@@ -12,11 +12,13 @@ try{
 
     //this takes the unique inputs from the Addbooks.php page and then binds them to the general parameters above
 	$stmt->bindParam(':Title', $_POST["title"]);
-    $stmt->bindParam(':ISBN', $_POST["ISBN"]);
-	$stmt->bindParam(':Author', $_POST["author"]);
-    $stmt->bindParam(':Description', $_POST["description"]);
+    $stmt->bindParam(':Author', $_POST["author"]);
+	$stmt->bindParam(':Genre', $_POST["genre"]);
     $stmt->bindParam(':Length', $_POST["length"]);
-    $stmt->bindParam(':Image', $_POST["image"]);
+    $stmt->bindParam(':Publishdate', $_POST["publishdate"]);
+    $stmt->bindParam(':ISBN', $_POST["ISBN"]);
+    $stmt->bindParam(':Description', $_POST["description"]);
+    //$stmt->bindParam(':Image', $_POST["image"]);
     $stmt->bindParam(':Rating', $_POST["rating"]);
     $stmt->bindParam(':In_Library', $_POST["inlibrary"]);
 	$stmt->execute();

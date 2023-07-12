@@ -14,6 +14,9 @@
     ISBN: <input type = "number" name = "ISBN"><br>
     <!--Image: <input type = "image" name = "image"><br>-->
     Description: <input type = "text" name = "description"><br>
+    Rating: <input type = "text" name = "rating"><br>
+    In_library: <input type = "text" name = "inlibrary"><br>
+
     <input type= "submit" value = "Add New Book"><br>
     </table>
 </form>
