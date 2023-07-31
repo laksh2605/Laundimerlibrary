@@ -8,7 +8,7 @@ try{
     
 	$stmt = $conn->prepare("INSERT INTO TblBooks 
     (ISBN,Title,Author,Genre,Description,Length,Image,Rating,In_Library)VALUES
-    (NULL,:title,:author,:genre,:description,;length,:image,:rating,:inlibrary)");
+    (NULL,:title,:author,:genre,:description,;length,:image,:rating,:NULL)");
 
     //this takes the unique inputs from the Addbooks.php page and then binds them to the general parameters above
 	$stmt->bindParam(':Title', $_POST["title"]);
