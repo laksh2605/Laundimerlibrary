@@ -26,7 +26,7 @@ html {
 }
 
 .card {
-    box-shadow: 2 4px 8px 0 rgba(0,0,0,0.2);*/
+    box-shadow: 2 4px 8px 0 rgba(0,0,0,0.2);*
         border-style: groove;
 }
 .card:hover{
@@ -76,9 +76,16 @@ html {
     ?>
 
     <div id="homepage" class="w3-container" style="padding-left:0px">
-        <h2 class='w3-border-bottom w3-border-
+        <h2 class="w3-border-bottom w3-border-black" style= "text-align: center; font-family: 'Times New Roman', Times, serif; padding-bottom:10px">My Profile</h2>
+</div>
 
-    
+<div class="w3-row-padding" style='padding-top: 20px; padding-bottom;100px;'>
+<div class="w3-col l3 m6 w3-margin-bottom" style='padding-top: 20px;'>
+<div class="w3-display-container">
+<div class="w3-display-topleft w3-black w3-padding"><a id="link1" style="display; inline-block; color:white; font-family: 'Times New Roman', Times, serif;" href="EditProfile.php">Edit My Details</a></div>
+</div>
+    <br>
+
 
     
     <ul>
