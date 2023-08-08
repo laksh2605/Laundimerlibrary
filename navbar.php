@@ -1,6 +1,6 @@
 <HTML>
 <div class="topMenu">
-            <button class="menubutton" onclick="document.location.href='Addbooks.php'">My Profile</button>
+            <button class="menubutton" onclick="document.location.href='Addbooks.php'">Add Books</button>
             <button class="menubutton" onclick="document.location.href='Addadmins.php'">Sign Up</button>
             <button class="menubutton" type="button">Login</button>
         </div>
