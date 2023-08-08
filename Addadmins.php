@@ -1,19 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add New Admin</title>
-</head>
-<body>
-    <h1>Add New Admin to System</h1>
-    <form action='addadminsql.php' method = "POST">
-        Surname: <input type = "text" name= "surname"><br>
-        Forename: <input type = "text" name= "forename"><br>
-        Username: <input type = "text" name= "username"><br>
-        Password: <input type = "text" name= "password"><br>
-        Email_Address: <input type = "text" name= "emailaddress"><br>
-        UserRole: <input type = "text" name= "userrole"><br>
-        
-        <input type="submit" value="Add New Admin"><br>
-</form>
-</body>
-</html>
+<HTML>
+    <head>
+        <title>Laundimer Library</title>
+        <link rel="stylesheet" href="header.css">
+        <style>
+            .signupform{
+                text-align:center;
+                font-size:18px;
+                margin-top: 40;
+            }
+        </style>
+    </head>
+    <body>
+      <?php require 'navbar.php'; ?>
+        <div>
+            <div class="signupform">
+                <form action="addadminsql.php" method="POST">
+                    Fore Name: <input type="text" name="forename"/></br></br>
+                    Sure Name: <input type="text" name="surname"/></br></br>
+                    User Name: <input type="text" name="username"/></br></br>
+                    Password: <input type="password" name="password"/></br></br>
+                    Email Address: <input type="text" name="email"/></br></br>
+                    DOB: <input type="text"  name="dob"/></br></br>
+                    User Role: <input type="text"  name="userRole"/></br></br>
+                    <input type="submit" value="Sign Up"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</HTML>

@@ -34,6 +34,7 @@ echo "1";
     (ISBN VARCHAR(13) PRIMARY KEY,
     Title VARCHAR(50) NOT NULL,
     Author VARCHAR(50) NOT NULL,
+    Publisher VARCHAR(50) NOT NULL,
     Genre VARCHAR(50) NOT NULL,
     Description VARCHAR(2000) NOT NULL,
     Length INT(5) NOT NULL, 
