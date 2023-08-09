@@ -8,10 +8,10 @@ echo "1";
 
     $conn = new PDO("mysql:host=$servername", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "CREATE DATABASE IF NOT EXISTS Laundimerlibrary";
+    $sql = "CREATE DATABASE IF NOT EXISTS laundimerlibrary";
     $conn->exec($sql);
     //next 3 lines optional only needed really if you want to go on an do more SQL here!
-    $sql = "USE Laundimerlibrary";
+    $sql = "USE laundimerlibrary";
     $conn->exec($sql);
     echo "DB created successfully";
     //include_once("connection.php");

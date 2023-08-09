@@ -1,4 +1,4 @@
-<HTML>
+<html>
     <head>
         <title>Laundimer Library</title>
         <link rel="stylesheet" href="header.css">
@@ -15,13 +15,12 @@
         <div>
             <div class="signupform">
                 <form action="addadminsql.php" method="POST">
-                    Fore Name: <input type="text" name="forename"/></br></br>
-                    Sure Name: <input type="text" name="surname"/></br></br>
-                    User Name: <input type="text" name="username"/></br></br>
+                    Forename: <input type="text" name="forename"/></br></br>
+                    Surname: <input type="text" name="surname"/></br></br>
+                    Username: <input type="text" name="username"/></br></br>
                     Password: <input type="password" name="password"/></br></br>
-                    Email Address: <input type="text" name="email"/></br></br>
-                    DOB: <input type="text"  name="dob"/></br></br>
-                    User Role: <input type="text"  name="userRole"/></br></br>
+                    Email Address: <input type="text" name="Email_Address"/></br></br>
+                    UserRole: <input type="text"  name="UserRole"/></br></br>
                     <input type="submit" value="Sign Up"/>
                 </form>
             </div>

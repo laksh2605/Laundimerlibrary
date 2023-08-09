@@ -1,4 +1,4 @@
-<HTML>
+<html>
     <head>
         <title>Laundimer Library</title>
         <link rel="stylesheet" href="header.css">
@@ -19,7 +19,7 @@
                     Author: <input type="text" name="Author"/></br></br>
                     Genre: <input type="text" name="Genre"/></br></br>
                     PageLength: <input type="text" name="Page Length"/></br></br>
-                   Publish Date: <input type="text" name="Publish Date"/></br></br>
+                    Publish Date: <input type="text" name="Publish Date"/></br></br>
                     ISBN: <input type="text"  name="ISBN"/></br></br>
                     Publisher: <input type="text"  name="Publisher"/></br></br>
                     Description: <input type="text"  name="Description"/></br></br>
@@ -31,4 +31,4 @@
             </div>
         </div>
     </body>
-</HTML>
+        </html>

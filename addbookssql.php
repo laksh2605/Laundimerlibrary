@@ -13,6 +13,4 @@ if($conn->query($sql) == TRUE){
     echo "Successful insertion";
 }
 
-
-
 ?>

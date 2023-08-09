@@ -1,18 +1,32 @@
 <?php
 
+//create DB here..
+   $servername = 'localhost';
+   $username = 'root';
+   $password= '';
+   $dbname = "laundimerlibrary"
 
-include_once('connection.php');
+   $conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn-> connect-error){
+    die("Connection failed: " . $conn->connect_error);
+}
 
 echo "Connected Sucessfully";
 
-$sql = "INSERT INTO tblbooks
-(ISBN,Title,Author,Genre,Description,PageLength,Rating,In_Library)VALUES
-('".$_POST["ISBN"]."','".$_POST["Title"]."','".$_POST["Author"]."','".$_POST["Genre"]."','".$_POST["Description"]."','".$_POST["PageLength"]."','".$_POST["Rating"]."','".$_POST["In_Library"]."')";
+$sql = "INSERT INTO tblusers (surname,forename,username,password,email,userRole)
+VALUES ('".$_POST["surname"]."','".$_POST["forename"]."','".$_POST["username"]."','".$_POST["password"]."','".$_POST["email"]."','".$_POST["userRole"]."')";
+
 
 if($conn->query($sql) == TRUE){
     echo "Successful insertion";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-
+$conn->close();
 
 ?>
+
+
