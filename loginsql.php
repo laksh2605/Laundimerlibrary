@@ -1,19 +1,16 @@
 <?php
     session_start();
-    include_once ("addadminsql.php");
+    include_once ("connection.php");
 
-    $stmt = $conn-> prepare("SELECT * FROM tblusers where Username=:username;");
-    $stmt->bindParam(':username',$_POST['Username']);
-
-    $stmt->execute();
-    while ($row = $stmt-> fetch(PDO::FETCH_ASSOC))
-    {
-        if($_POST['password']==$row['Password']){
-            $_SESSION['name'] = $row{"USername"};
-        }else{
-
-        }
+    $sql="SELECT * FROM tblusers where Username='".$_POST['username']."'";
+    $retval=mysqli_query($conn, $sql);
+    if(mysqli_num_rows($retval) > 0){  
+     while($row = mysqli_fetch_assoc($retval)){  
+        echo "<br> Username : {$row['Username']}  <br> ". 
+             "--------------------------------<br>";  
     }
-    $conn=null;
-    ;
+    }else{  
+    echo "0 results";  
+    }  
+    mysqli_close($conn);
     ?>
