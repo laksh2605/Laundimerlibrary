@@ -5,6 +5,6 @@
     </head>
     <body>
     <?php require 'navbar.php'; ?>
-    <div class="indexbutton1"> <button class="indexbuttoncss" type="button">My Profile</button></div>
+    <div class="indexbutton1"> <button class="indexbuttoncss" onclick="document.location.href='Addbooks.php'">Add Books</button></div>
     </body>
 </html>

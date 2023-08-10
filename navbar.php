@@ -1,11 +1,11 @@
 <html>
 <div class="topMenu">
-            <button class="menubutton" onclick="document.location.href='Addbooks.php'">Add Books</button>
+            <button class="menubutton" onclick="document.location.href='profile.php'">My Profile</button>
             <button class="menubutton" onclick="document.location.href='Addadmins.php'">Sign Up</button>
-            <button class="menubutton" type="button">Login</button>
+            <button class="menubutton" onclick="document.location.href='login.php'">Login</button>
         </div>
         <div class="middlebar">
-            <H1>Laundimer Library</H1>
+            <button class="menubutton" onclick="document.location.href='index.php'"><h1>Laundimer Library</h1></button>
         </div>
         <div class="lowerMenu">
             <button class="menubutton" type="button">About</button>
