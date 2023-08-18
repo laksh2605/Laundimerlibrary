@@ -16,16 +16,19 @@
             <div class="signupform">
 
 <h1> My Profile </h1>
-    <ul>
-        <li><button><a id="link1" style="display: inline-block;" href= "EditDetails.php">Edit my Details</a></button></li>
-        <li><button><a id="link2" style="display: inline-block;" href= "viewreviews.php">View Reviews</a></button></li>
-        <li><button><a id="link3" style="display: inline-block;" href= "LoanHistory.php">Loan History</a></button></li>
-        <li><button><a id="link4" style="display: inline-block;" href= "Fines.php">Fines</a></button></li>
-        <li><button><a id="link5" style="display: inline-block;" href= "Orders.php">Orders</a></button></li>
-    </ul>
+      <ul>      
+        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='EditDetails.php'">Edit Details</button></div></li>
 
+        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='LoanHistory.php'">Loan History</button></div></li>
+
+        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='viewreviews.php'">View Reviews</button></div></li>
+
+        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='Fines.php'">Fines</button></div></li>
+
+        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='Orders.php'">Orders</button></div></li>
+    </ul>
+    
     <h2>Recommend</h2>
 
 </body>
 </html>
-

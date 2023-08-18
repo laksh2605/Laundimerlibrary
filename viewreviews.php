@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Laundimer Library</title>
+        <title>View Reviews</title>
         <link rel="stylesheet" href="header.css">
         <style>
             .signupform{
@@ -10,8 +9,11 @@
                 margin-top: 40;
             }
         </style>
-<body>
-<?php require 'navbar.php'; ?>
+    </head>
+    <body>
+      <?php require 'navbar.php'; ?>
+        <div>
+            <div class="signupform">
 <h1>View Reviews</h1>
 <table>
 <form action="viewreviewsql.php" method="POST">
