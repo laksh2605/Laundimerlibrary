@@ -5,6 +5,7 @@ include_once ("connection.php");
     $stmt=$conn->prepare("INSERT INTO tblloans
     (UserID,ISBN,Date_Borrowed,Date_Returned,Review,Rating,Late_Fines)VALUES(NULL,:isbn,:date_borrowed,:date_returned,:review,:rating,:late_fines)");
 
+    $stmt-> bindParam(':UserID', $_POST["UserID"]);
     $stmt-> bindParam(':isbn', $_POST["ISBN"]);
     $stmt-> bindParam(':date_borrowed', $_POST["date_borrowed"]);
     $stmt-> bindParam(':date_returned', $_POST["date_returned"]);
