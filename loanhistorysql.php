@@ -23,4 +23,4 @@
         <td><p><?php echo $row ["Date_Borrowed"]; ?> </p> </td>
         <td><p><?php echo $row ["Date_Returned"]; ?> </p> </td>
         </tr>
-        <?php}}
+        <?php}}?>

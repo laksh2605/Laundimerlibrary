@@ -18,10 +18,6 @@
         <tr>Search User ID, Username or Surname:<td><input type="text" name="searchfor"></tr>
         <input type ="submit" value = "Search"><br>
     </table>
-    <!-- User ID: <input type="text" name = "userid"><br>
-    Surname: <input type="text" name = "surname"><br>
-    Username: <input type="text" name = "username"><br>
-    <input type ="submit" value = "Search"><br> -->
 </form>
 <!-- this conditional was introduced after the first time I reloaded the page and it printed out an error. -->
 <?php
@@ -38,9 +34,8 @@
      </tr>  
 <?php }
     ?>
-
-
 <?php ?>
 </table>
 </body>
 </html>
+

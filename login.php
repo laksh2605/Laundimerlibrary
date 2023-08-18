@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Login</title>
-<link rel="stylesheet" href="header.css">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="header.css">
         <style>
             .signupform{
                 text-align:center;
@@ -10,9 +9,14 @@
                 margin-top: 40;
             }
         </style>
+    </head>
+    <body>
+      <?php require 'navbar.php'; ?>
+        <div>
+            <div class="signupform">
 </head>
 <body>
-<?php require 'navbar.php'; ?>
+
     <form action="loginsql.php" method= "POST">
 <br>
 Username:<input type="text" name="username"><br>
