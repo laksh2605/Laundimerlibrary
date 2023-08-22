@@ -20,7 +20,7 @@
 <form action="orderssql.php" method="POST">
 <h1>View Orders</h1>
 Title: <input type="text" name="Title"/></br></br>
-<input type="submit" value="View Reviews"/>
+<input type="submit" value="Orders"/>
 <!-- <table>
     <tr>
         <th>Title</th>

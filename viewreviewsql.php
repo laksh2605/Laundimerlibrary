@@ -2,9 +2,6 @@
 
 include_once ("connection.php");
 
-    // $sql="SELECT disticnt tblbooks.ISBN, tblbooks.UserID, tblbooks.Rating, tblreviews.Reviews FROM tblreviews INNER JOIN tblbooks ON
-    // tblbooks.ISBN=tblreviews.ISBN Where UserID='".$_POST['UserID']."'";
-
     $sql="SELECT * FROM tblreviews INNER JOIN tblbooks ON
     tblbooks.ISBN=tblreviews.ISBN Where UserID='".$_POST['UserID']."'";
 
@@ -13,7 +10,7 @@ include_once ("connection.php");
     if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        // echo "ISBN: " . $row["ISBN"]. " - UserID: " . $row["UserID"]. " " . $row["Rating"]. "<br>";?>
+    ?>
         <table>
         <tr>
         <th><td>ISBN</td><td><?php echo $row["ISBN"]?></td></th>

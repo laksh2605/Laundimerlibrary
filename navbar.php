@@ -11,6 +11,6 @@
         <div class="lowerMenu">
             <button class="menubutton" type="button">About</button>
             <button class="menubutton" type="button">Browse Catalogue</button>
-            <button class="menubutton" type="button">New Requests</button>
+            <button class="menubutton" onclick="document.location.href='newrequests.php'">New Requests</button>
         </div>
 </html>
