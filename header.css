@@ -43,19 +43,19 @@
         padding-top: 200;
         padding-left: 500;}
 
-        .indexbuttoncss{
+        .homepagebutton{
             background-color: #7A3E31;
             color: white;
-            height:100px;
-            width: 100px;
+            height:60px;
+            width: 120px;
             border: 2px solid #7A3E31;
         }
 
         .profilebuttoncss{
             background-color: #7A3E31;
             color: white;
-            height:40px;
-            width: 100px;
+            height:100px;
+            width: 200px;
             border: 2px solid #7A3E31;
         }
 

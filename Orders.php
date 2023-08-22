@@ -17,32 +17,17 @@
             <div class="signupform">
 </head>
 <body>
-
+<form action="orderssql.php" method="POST">
 <h1>View Orders</h1>
-<table>
+Title: <input type="text" name="Title"/></br></br>
+<input type="submit" value="View Reviews"/>
+<!-- <table>
     <tr>
         <th>Title</th>
         <th>Author</th>
         <th></th>
-    </tr>
-<?php
-
-    $join="SELECT TblBooks.Title, TblBooks.Author, TblOrders.ISBN FROM TblOrders 
-    INNER JOIN TblBooks ON TblBooks.ISBN=TblOrders.ISBN WHERE UserID='".$_SESSION['userid']."'";
-
-    $stmt=$conn->prepare($join);
-    $stmt->execute();
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        ?>
-        <tr>
-            <td><p><?php echo $row['Title']; ?></p></td>
-            <td><p><?php echo $row['Author']; ?></p></td>
-            <td><form ation='CancelOrder.php' method="POST">
-            <input type="hidden" name="isbn" value="<?php echo $row['ISBN']; ?>"><br>
-            <td><input type="submit" value = "Cancel Order"></td><br>>
-                </form></td>
-       </tr>
-    <?php } ?>
-    </table>
-    </body>
-    </html>
+    </tr> -->
+<!-- </table> -->
+</form>
+</body>
+</html>

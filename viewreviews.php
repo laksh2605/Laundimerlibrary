@@ -15,14 +15,10 @@
         <div>
             <div class="signupform">
 <h1>View Reviews</h1>
-<table>
-<form action="viewreviewsql.php" method="POST">
-    <tr>
-        <th>ISBN</th>
-        <th>UserID</th>
-        <th>Rating</th>
-        <th>Reviews</th>
-    </tr>
-</table>
+<form action="viewreviewsql.php" method="POST"> 
+UserID: <input type="text" name="UserID"/></br></br>
+<input type="submit" value="View Reviews"/>
+</form>
 </body>
 </html>
+

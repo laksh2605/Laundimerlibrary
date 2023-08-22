@@ -16,17 +16,17 @@
             <div class="signupform">
 
 <h1> My Profile </h1>
-      <ul>      
-        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='EditDetails.php'">Edit Details</button></div></li>
+           
+        <button class="profilebuttoncss" onclick="document.location.href='EditDetails.php'">Edit Details</button>
 
-        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='LoanHistory.php'">Loan History</button></div></li>
+        <button class="profilebuttoncss" onclick="document.location.href='LoanHistory.php'">Loan History</button>
 
-        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='viewreviews.php'">View Reviews</button></div></li>
+        <button class="profilebuttoncss" onclick="document.location.href='viewreviews.php'">View Reviews</button>
 
-        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='Fines.php'">Fines</button></div></li>
+        <button class="profilebuttoncss" onclick="document.location.href='Fines.php'">Fines</button>
 
-        <li><div class="profilebutton1"> <button class="indexbuttoncss" onclick="document.location.href='Orders.php'">Orders</button></div></li>
-    </ul>
+        <button class="profilebuttoncss" onclick="document.location.href='Orders.php'">Orders</button>
+    
 
     <h2>Recommend</h2>
 
