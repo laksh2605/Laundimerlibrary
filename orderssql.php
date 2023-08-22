@@ -12,8 +12,8 @@ $result = $conn->query($sql);
         // echo "ISBN: " . $row["ISBN"]. " - UserID: " . $row["UserID"]. " " . $row["Rating"]. "<br>";?>
         <table>
         <tr>
-        <th><td>Title</td><td><?php echo $row["Title"]?></td></th>
-        <th><td>Author</td><td><?php echo $row["Author"]?></td></th>
+        <th><td>Title: </td><td><?php echo $row["Title"]?></td></th>
+        <th><td>Author: </td><td><?php echo $row["Author"]?></td></th>
     </tr>
     
 </table>

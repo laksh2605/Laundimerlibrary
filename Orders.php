@@ -21,13 +21,7 @@
 <h1>View Orders</h1>
 Title: <input type="text" name="Title"/></br></br>
 <input type="submit" value="Orders"/>
-<!-- <table>
-    <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th></th>
-    </tr> -->
-<!-- </table> -->
+
 </form>
 </body>
 </html>
