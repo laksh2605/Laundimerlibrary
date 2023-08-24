@@ -1,6 +1,5 @@
 <html>
 <head>
-
     <title>View Orders</title>
     <link rel="stylesheet" href="header.css">
         <style>
@@ -25,3 +24,5 @@ Title: <input type="text" name="Title"/></br></br>
 </form>
 </body>
 </html>
+
+

@@ -10,12 +10,13 @@ $result = $conn->query($sql);
     // output data of each row
     while($row = $result->fetch_assoc()) {
         // echo "ISBN: " . $row["ISBN"]. " - UserID: " . $row["UserID"]. " " . $row["Rating"]. "<br>";?>
-        <table>
-        <tr>
+<table>
+    <tr>
         <th><td>Title: </td><td><?php echo $row["Title"]?></td></th>
         <th><td>Author: </td><td><?php echo $row["Author"]?></td></th>
+        <th><td><form action = 'CancelOrder.php' method = "POST"></td></th>
+        <th><td><input type = "submit" value = "Cancel Order"></td></th>
     </tr>
-    
 </table>
 <?php
     }
