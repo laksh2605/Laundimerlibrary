@@ -13,10 +13,10 @@ include_once ("connection.php");
     ?>
         <table>
         <tr>
-        <th><td>ISBN</td><td><?php echo $row["ISBN"]?></td></th>
-        <th><td>User Id</td><td><?php echo $row["UserID"]?></td></th>
-        <th><td>Rating</td><td><?php echo $row["Rating"]?></td></th>
-        <th><td>Reviews</td><td><?php echo $row["Reviews"]?></td></th>
+        <th><td>ISBN: </td><td><?php echo $row["ISBN"]?></td></th>
+        <th><td>User Id: </td><td><?php echo $row["UserID"]?></td></th>
+        <th><td>Rating: </td><td><?php echo $row["Rating"]?></td></th>
+        <th><td>Reviews: </td><td><?php echo $row["Reviews"]?></td></th>
     </tr>
     
 </table>
