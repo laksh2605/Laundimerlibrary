@@ -14,6 +14,8 @@
       <?php require 'navbar.php'; ?>
         <div>
             <div class="signupform">
+            <h1>Login</h1>
+
 </head>
 <body>
 

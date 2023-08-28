@@ -29,16 +29,4 @@ $result = $conn->query($sql);
         ?>
 
 
-    <!-- $stmt=$conn->prepare($join);
-    $stmt->execute();
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        ?>
-        <tr>
-            <td><p><?php echo $row['Title']; ?></p></td>
-            <td><p><?php echo $row['Author']; ?></p></td>
-            <td><form ation='CancelOrder.php' method="POST">
-            <input type="hidden" name="isbn" value="<?php echo $row['ISBN']; ?>"><br>
-            <td><input type="submit" value = "Cancel Order"></td><br>>
-                </form></td>
-       </tr>
-    <?php ?> -->
+   

@@ -3,9 +3,9 @@
     include_once ("connection.php");
 
     $sql="SELECT * FROM tblusers where Username='".$_POST['username']."'";
-    $retval=mysqli_query($conn, $sql);
-    if(mysqli_num_rows($retval) > 0){  
-     while($row = mysqli_fetch_assoc($retval)){  
+    $value=mysqli_query($conn, $sql);
+    if(mysqli_num_rows($value) > 0){  
+     while($row = mysqli_fetch_assoc($value)){  
         echo "<br> Username : {$row['Username']}  <br> ". 
              "--------------------------------<br>";  
     }

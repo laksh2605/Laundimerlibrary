@@ -17,7 +17,7 @@
 
 <h1> My Profile </h1>
            
-        <button class="profilebuttoncss" onclick="document.location.href='EditDetails.php'">Edit Details</button>
+        <button class="profilebuttoncss" onclick="document.location.href='EditProfiles.php'">Edit Details</button>
 
         <button class="profilebuttoncss" onclick="document.location.href='LoanHistory.php'">Loan History</button>
 
