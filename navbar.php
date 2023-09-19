@@ -1,5 +1,9 @@
 <html>
 <div class="topMenu">
+    <?php
+    session_start();
+    echo $_SESSION["loggedinuser"];
+    ?>
             <button class="menubutton" onclick="document.location.href='index.php'">Homepage</button>
             <button class="menubutton" onclick="document.location.href='profile.php'">My Profile</button>
             <button class="menubutton" onclick="document.location.href='Addadmins.php'">Sign Up</button>

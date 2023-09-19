@@ -6,8 +6,9 @@
 <h1>Edit Details</h1>
 
 <?php
-
-$details= "SELECT * FROM tblusers WHERE UserID='".$_SESSION['userid']."'";
+session_start();
+print_r($_SESSION);
+$details= "SELECT * FROM tblusers WHERE UserID='".$_SESSION['loggedinuser']."'";
     echo "<table";
     $stmt=$conn->prepare($details);
     $stmt->execute();

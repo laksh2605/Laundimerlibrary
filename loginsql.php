@@ -8,6 +8,7 @@
      while($row = mysqli_fetch_assoc($value)){  
         echo "<br> Username : {$row['Username']}  <br> ". 
              "--------------------------------<br>";  
+        $_SESSION['loggedinuser']=$row['UserID'];
     }
     }else{  
     echo "0 results";  
